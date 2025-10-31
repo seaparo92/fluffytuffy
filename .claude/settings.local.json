@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(do powershell -Command \"(Get-Content -Path ''$file'' -Raw) -replace ''KJ styles\\.jpeg'',''logo.png'' -replace ''tuffy-fluffy-logo\\.png'',''logo.png'' | Set-Content -Path ''$file''\")",
+      "Bash(findstr:*)",
+      "Bash(dir:*)",
+      "Bash(README.md)",
+      "Bash(git init:*)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git remote add:*)",
+      "Bash(git push:*)",
+      "Bash(git remote:*)",
+      "Bash(git config:*)",
+      "Bash(git credential-cache:*)",
+      "Bash(cmdkey /list:*)",
+      "Bash(set GIT_ASKPASS=echo)",
+      "Bash(nul)",
+      "Bash(ssh-keygen:*)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
