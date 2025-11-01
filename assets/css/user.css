@@ -3,5 +3,12 @@
   color: #ff6600 !important;
 }
 
+/* Premium 3-Ply title color on mobile */
+@media (max-width: 767px) {
+  .premium-3ply-title {
+    color: #12265E !important;
+  }
+}
+
 /* prettier-ignore */
 /*# sourceMappingURL=user.css.map */
