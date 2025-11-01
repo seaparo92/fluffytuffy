@@ -10,5 +10,14 @@
   }
 }
 
+/* Title stripe background for better visibility */
+.title-stripe-bg {
+  background: rgba(14, 156, 157, 0.85);
+  display: inline-block;
+  padding: 15px 40px;
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* prettier-ignore */
 /*# sourceMappingURL=user.css.map */
