@@ -17,7 +17,8 @@
       "Bash(cmdkey /list:*)",
       "Bash(set GIT_ASKPASS=echo)",
       "Bash(nul)",
-      "Bash(ssh-keygen:*)"
+      "Bash(ssh-keygen:*)",
+      "Bash(git log:*)"
     ],
     "deny": [],
     "ask": []
