@@ -34,5 +34,34 @@
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
 }
 
+/* Social media icon styling */
+.social-icon-box {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+
+.social-icon-box:hover {
+  background: linear-gradient(135deg, #0e9c9d 0%, #ffc107 100%);
+  transform: scale(1.1);
+}
+
+.social-icon-box:hover .fab {
+  color: white !important;
+}
+
+.social-link-text {
+  transition: color 0.3s ease;
+}
+
+.social-link:hover .social-link-text {
+  color: white !important;
+}
+
 /* prettier-ignore */
 /*# sourceMappingURL=user.css.map */
