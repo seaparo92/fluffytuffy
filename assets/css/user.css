@@ -8,6 +8,69 @@
   .premium-3ply-title {
     color: #12265E !important;
   }
+
+  /* Change product range first image on mobile */
+  .product-range-image-1 {
+    background-image: url('../img/Tuffy%20fluffy.jpg') !important;
+    background-size: contain !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+  }
+}
+
+/* Ensure slider backgrounds fill the entire screen on mobile */
+.swiper-slide .bg-holder {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+  height: 100% !important;
+}
+
+/* Hero slider specific - use cover for full-screen sliders */
+.theme-slider.min-vh-100 .swiper-slide .bg-holder {
+  background-size: cover !important;
+}
+
+/* Ensure all bg-holder images fit without being cut off */
+.bg-holder {
+  background-size: contain !important;
+  background-position: center center !important;
+  background-repeat: no-repeat !important;
+}
+
+/* Prevent hero slider from covering navigation menu */
+.theme-slider.min-vh-100 {
+  margin-top: 0;
+  position: relative;
+}
+
+.theme-slider .swiper-slide .container {
+  position: relative;
+  z-index: 1;
+}
+
+.sticky-top.navbar-elixir {
+  z-index: 1050 !important;
+  position: sticky;
+  background-color: white;
+}
+
+/* Ensure slider content is visible below sticky nav */
+section.py-0 {
+  position: relative;
+  z-index: 1;
+}
+
+/* Adjust slider to not be cut off by navigation */
+.swiper.theme-slider.min-vh-100 {
+  min-height: 100vh !important;
+}
+
+.swiper.theme-slider .swiper-slide .bg-holder {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 /* Title stripe background for better visibility */
@@ -32,6 +95,25 @@
 .hover-shadow:hover {
   transform: translateY(-5px);
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Hover tile effect for service tiles */
+.hover-tile {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-tile:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Image zoom effect on hover */
+.hover-zoom {
+  transition: transform 0.5s ease;
+}
+
+.hover-tile:hover .hover-zoom {
+  transform: scale(1.1);
 }
 
 /* Social media icon styling */
